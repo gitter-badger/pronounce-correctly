@@ -6,9 +6,26 @@
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
+
 <body>
 
-<%= yield %>
+<div id="header">
+
+</div>
+
+<div id="float">
+	<div id="content">
+		<%= yield %>
+	</div>
+</div>
+
+<div id="footer">
+	<div style="margin: 5px;">
+		<%= debug params if !Rails.env.development? %>
+		<h5 class='left-floated'>&copy; 2013 Korv </h4>
+		<h5 class='right-floated'>mailto: <a href="mailto:rumm3l@gmail.com?subject=Site">rumm3l@gmail.com</a></h4>
+	</div>
+</div>
 
 </body>
 </html>

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Wrong:</strong>
+  <%= @word.wrong %>
+</p>
+
+<p>
+  <strong>Correct:</strong>
+  <%= @word.correct %>
+</p>
+
+<%= link_to 'Edit', edit_word_path(@word) %> |
+<%= link_to 'Back', words_path %>

@@ -1,0 +1,61 @@
+/* general page */
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+html, body
+{
+	height: 100%;
+	width: 100%;
+	background-color: #FFF;
+}
+
+#header
+{
+	width: 100%;
+	height: 100px;
+	background-color: #aqua;
+}
+
+#float
+{
+	min-height: 100%
+	position: relative;
+}
+
+#content
+{
+
+}
+
+#footer
+{
+	position: absolute;
+	bottom: 0;
+	width: 100%;	
+	color: #708090;
+}
+
+#footer a 
+{
+	color: #708090;
+	background-color: white;
+	text-decoration: none;
+}
+
+#footer a:hover
+{
+	text-decoration: underline;
+}
+
+.left-floated
+{
+	float: left;
+}
+
+.right-floated
+{
+	float: right;
+}
