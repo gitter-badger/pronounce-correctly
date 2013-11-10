@@ -3,6 +3,8 @@ class WordsController < ApplicationController
 
 	def random    
 		@word  = Word.random
+
+		render 'layouts/_no_words.html' unless @word
 	end
 
   # GET /words

@@ -1,8 +1,7 @@
 class Word < ActiveRecord::Base
 
 	def self.random
-		#OPTIMIZE next call always return new page
-		Word.offset(rand(Word.count)).first
+		Word.offset(rand(Word.count)).first if Word.any?
 	end
 
 end
