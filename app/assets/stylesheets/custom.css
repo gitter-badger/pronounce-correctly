@@ -59,3 +59,8 @@ html, body
 {
 	float: right;
 }
+
+.centered
+{
+	text-align: center;
+}
